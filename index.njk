@@ -1,3 +1,9 @@
+{% set emailLink = "mailto:yo@henry.codes?subject=You%20Mad%20Dog%2C%20You!%20Your%20Website%20Delighted%20Me%20And%20I%20Should%20Like%20To%20Work%20With%20You" %}
+{% set title = "Hire Me | The Resume & CV of Henry Desroches" %}
+{% set description = "Here’s the elevator pitch on why I’d love to work with you and why the heck you might want to work with me. Hope you think it’s nice :)" %}
+{% set ogUrl = "https://hire.henry.codes/meta/opengraph.jpg" %}
+{% set siteUrl = "hireme.website" %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,30 +16,21 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/meta/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/meta/favicon-16x16.png" />
 
-    <title>Hire Me | The Resume & CV of Henry Desroches</title>
-    <meta
-      name="description"
-      content="Here’s the elevator pitch on why I’d love to work with you and why the heck you might want to work with me. Hope you think it’s nice :)"
-    />
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ description }}" />
 
-    <meta property="og:url" content="https://hire.henry.codes" />
+    <meta property="og:url" content="https://{{ siteUrl }}" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Hire Me | The Resume & CV of Henry Desroches" />
-    <meta
-      property="og:description"
-      content="Here’s the elevator pitch on why I’d love to work with you and why the heck you might want to work with me. Hope you think it’s nice :)"
-    />
-    <meta property="og:image" content="https://hire.henry.codes/meta/opengraph.jpg" />
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:description" content="{{ description }}" />
+    <meta property="og:image" content="{{ ogUrl }}" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta property="twitter:domain" content="hire.henry.codes" />
-    <meta property="twitter:url" content="https://hire.henry.codes" />
-    <meta name="twitter:title" content="Hire Me | The Resume & CV of Henry Desroches" />
-    <meta
-      name="twitter:description"
-      content="Here’s the elevator pitch on why I’d love to work with you and why the heck you might want to work with me. Hope you think it’s nice :)"
-    />
-    <meta name="twitter:image" content="https://hire.henry.codes/meta/opengraph.jpg" />
+    <meta property="twitter:domain" content="{{ siteUrl }}" />
+    <meta property="twitter:url" content="https://{{ siteUrl }}" />
+    <meta name="twitter:title" content="{{ title }}" />
+    <meta name="twitter:description" content="{{ description }}" />
+    <meta name="twitter:image" content="{{ ogUrl }}" />
   </head>
 
   <body>
@@ -175,10 +172,7 @@
           <p>(wow this seems like it’d be an incredible fit, i’m ready to start a conversation)</p>
           <p>
             Hell yeah,
-            <a
-              href="mailto:yo@henry.codes?subject=You%20Mad%20Dog%2C%20You!%20Your%20Website%20Delighted%20Me%20And%20I%20Should%20Like%20To%20Work%20With%20You"
-              >Let’s chat.</a
-            >
+            <a href="{{ emailLink }}">Let’s chat.</a>
           </p>
           <p>(no no, i want to see where this goes. keep talking, strange internet man.)</p>
         </aside>
@@ -250,7 +244,7 @@
               Okay well first of all, very stoked and honored that you want to move forward! My general preference is:
               we have a chat, I demonstrate I can do the work y’all need me to do, and go from there, but I’m happy to
               journey through whatever application process you have in mind. Reach out by email (<a
-                href="yo@henry.codes"
+                href="{{ emailLink }}"
                 >yo@henry.codes</a
               >), and let’s have a conversation.
             </p>
