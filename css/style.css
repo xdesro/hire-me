@@ -137,7 +137,7 @@ ul {
 }
 
 li {
-    padding-left: 1.75rem;
+    padding-left: .75rem;
 }
 
 li::marker {
@@ -292,6 +292,10 @@ footer span {
         display: grid;
         grid-auto-flow: column;
         justify-content: space-between;
+    }
+
+    li {
+        padding-left: 1.75rem;
     }
 
     .subtitle {
