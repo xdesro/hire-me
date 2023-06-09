@@ -75,7 +75,6 @@ a:focus {
 
 header {
     padding-block: 1rem;
-    text-align: right;
     text-transform: uppercase;
     color: var(--color-neutral--deemphasized);
     border-bottom: 1px solid currentColor;
