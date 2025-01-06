@@ -85,7 +85,7 @@ body {
   color: var(--color-neutral);
   background-color: var(--color-background);
 
-  --color-background: hsl(38deg 11% 15%);
+  --color-background: hsl(38deg 11% 9%);
   --color-border: hsl(0, 0%, 60%);
   --color-outline: hsl(0, 0%, 88%);
   --color-neutral--deemphasized: hsl(0deg 0% 60%);
