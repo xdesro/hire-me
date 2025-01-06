@@ -5,4 +5,5 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy('fonts');
   eleventyConfig.addPassthroughCopy('css');
   eleventyConfig.addPassthroughCopy('meta');
+  eleventyConfig.addPassthroughCopy('ghost.png');
 };
