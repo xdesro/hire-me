@@ -165,7 +165,6 @@ h2 {
 }
 
 h2:before {
-  /* display: block; */
   content: counter(h2s, upper-roman) ".";
 }
 
@@ -326,12 +325,7 @@ footer span {
   h2 {
     font-size: 4.5rem;
   }
-
-  h2:before {
-    position: absolute;
-    margin-top: -0.8em;
-  }
-
+  
   header {
     display: grid;
     grid-auto-flow: column;
