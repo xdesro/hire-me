@@ -227,21 +227,21 @@ li::marker {
 }
 
 .intro {
+  position: relative;
   padding-block: 4rem;
   text-align: center;
-  position: relative;
 }
 
 img {
     position: absolute;
-    top: 50%;
-    inset-inline: 0;
-    transform: translateY(-50%);
-    margin-inline: auto;
     z-index: -1;
-    max-height: calc(100% - 4rem);
-    max-width: 100%;
+    inset-inline: 0;
+    top: 50%;
     display: block;
+    max-width: 100%;
+    max-height: calc(100% - 4rem);
+    margin-inline: auto;
+    transform: translateY(-50%);
 }
 
 .subtitle {
@@ -261,6 +261,10 @@ img {
   height: 1px;
   content: "";
   background-color: var(--color-border);
+}
+
+.expertise {
+  margin-bottom: 5rem;
 }
 
 .tags-list {
@@ -368,11 +372,7 @@ footer span {
   .section > div {
     grid-column: 3;
   }
-
-  .expertise {
-    margin-bottom: 5rem;
-  }
-
+  
   .cta {
     display: grid;
     gap: 2rem;
